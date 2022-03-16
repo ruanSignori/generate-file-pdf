@@ -1,0 +1,59 @@
+section.form-update {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #000000af;
+  cursor: auto;
+  overflow-y: scroll;
+}
+
+.content-form-update {
+  transition: all ease 0.4s;
+  animation: scaling 0.4s
+}
+
+.header-form {
+  background-color: #212529;
+  padding: 1rem;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header-form .flex .icon-user-edit {
+  color: #60a5fa;
+}
+
+.header-form .icon_close {
+  color: #adb5bd;
+  cursor: pointer;
+}
+
+.header-form .icon_close:hover {
+  color: #f87171;
+}
+
+.scroll-y {
+  overflow-y: scroll;
+}
+
+form .list-products {
+  margin: 15px 0;
+  max-height: 16rem;
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

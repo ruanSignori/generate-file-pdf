@@ -1,0 +1,123 @@
+.parent-list-users {
+  transition: all ease 0.4s;
+}
+
+.parent-list-users:hover {
+  background-color: #00000079;
+}
+
+.child-list-users {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2.3fr 1fr 1fr 1fr;
+  font-size: 1rem;
+  padding: 10px 15px;
+  transition: all ease 0.3s;
+  gap: 10px;
+  user-select: contain;
+}
+
+.child-list-users > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  padding: 20px;
+  padding-left: 0;
+}
+
+.child-list-users > .name-list {
+  width: 400px;
+}
+
+.name-list div:first-child {
+  width: 50px;
+}
+
+.name-list div:last-child {
+  width: 350px;
+}
+
+.child-list-users > .tel-list,
+.child-list-users > .date-list {
+  width: 250px;
+}
+
+.child-list-users > .action-list {
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.user {
+  color: #019875;
+}
+
+.tel {
+  color: #6C5FC7;
+}
+
+.clock {
+  color: #FEC42B;
+}
+
+.icon-action {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+  transform: scale(1.1);
+}
+
+.icon-action:hover {
+  transform: scale(1.4);
+}
+
+.delete {
+  color: #e65c5c;
+  margin-right: 10px;
+}
+
+.edit {
+  color: #51d2d6;
+  margin-right: 10px;
+}
+
+.more-info {
+  color: #fff;
+  transition: all ease 0.4s;
+  transition: transform 0.2s linear;
+}
+
+.more-info-rotate {
+  transform: rotate(180deg);
+  transition: transform 0.2s linear;
+}
+
+.elementClickEffect {
+  animation: elementClick 0.3s ;
+}
+
+@media (max-width: 500px) {
+  .child-list-users {
+    font-size: 12px;
+  }
+}
+
+
+@keyframes elementClick {
+  0% {
+    transform: scale(0.5);
+    transition: all 0.2s linear;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

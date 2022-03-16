@@ -1,0 +1,144 @@
+.info_user {
+  padding: 30px 15px ;
+  transition: all ease 0.4s;
+  min-height: 300px;
+  cursor: auto;
+  animation: dropItem 0.4s;
+}
+
+.info_user > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.title_info {
+  font-size: 1.4em;
+}
+
+.text_info {
+  color: #adb5bd
+}
+
+.info_user > div > div .address_info,
+.info_user > div > div .obs_info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.info_user > div > div .obs_info {
+  margin-top: 80px;
+}
+
+.info_user > div .products_info  {
+  width: 57% !important;
+}
+
+.info_user > div .products_info .products_header {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.products_info .products_header > div,
+.products_info .products_body > div {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.products_info .products_header > div:nth-child(2),
+.products_info .products_body > div:nth-child(2) {
+  width: 30%;
+  justify-content: center;
+}
+
+.products_info .products_header > div:last-child,
+.products_info .products_body > div:last-child {
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.products_info .products_body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.total_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon_info {
+  width: 30px;
+  height: 30px;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+
+.secondary_actions {
+  width: 100%;
+  cursor: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.secondary_actions .generate_pdf {
+  width: 225px;
+  margin-top: -20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.icon_house {
+  color: #f87171;
+}
+
+.icon_book-Reader {
+  color: #f0abfc;
+}
+
+.icon_shopping {
+  color: #60a5fa;
+}
+
+.icon_list {
+  color: #c084fc;
+}
+
+.icon_coins {
+  color: #facc15;
+}
+
+.parent_icon_pdf {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.icon_pdf {
+  color: #ef4444;
+}
+
+@keyframes dropItem {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,151 @@
+.dialog_box_overview {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background-color: #00000086;
+  display: grid;
+  place-content: center;
+  padding: 10px;
+  color: #343a40;
+  cursor: auto;
+}
+
+.dialog_box_overview .dialog_box_content {
+  width: 35vw;
+  background-color: #fff;
+  border-radius: 12px;
+  animation: scaling 0.4s ;
+}
+
+.content_msg {
+  padding: 6% 28px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.msg_title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.msg_text {
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+
+.icon_alert, .icon_check, .icon_edit {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.icon_alert {
+  color: #e65c5c;
+  background-color: #ffbcbc;
+}
+
+.icon_check {
+  color: #fff;
+  background-color: #10b981;
+  padding: 8px;
+}
+
+.icon_edit {
+  color: #3b82f6;
+  background-color: #93c5fd;
+}
+
+
+.dialog_box_actions {
+  background-color: #e4e4e4;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  border-radius: 0 0 12px 12px;
+}
+
+.dialog_box_actions button:first-child {
+  background-color: #f3f2f2;
+  border: 2px solid #343a40;
+  width: 18%;
+}
+
+.dialog_box_actions button:last-child{
+  width: 23%;
+}
+
+.dialog_box_actions a {
+  width: 30%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 0px;
+}
+
+.dialog_box_actions button, .dialog_box_actions a {
+  box-shadow: #959da533 0px 8px 24px;
+  transition: all ease 0.4s;
+}
+
+.dialog_box_actions button:hover, .dialog_box_actions a:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 650px) {
+  .dialog_box_overview .dialog_box_content .content_msg {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1475px) {
+  .dialog_box_overview .dialog_box_content {
+    width: 50vw;
+  }
+
+  .dialog_box_overview .dialog_box_content .dialog_box_actions button{
+    width: 30% !important;
+  }
+
+  .dialog_box_overview .dialog_box_content .dialog_box_actions a {
+    width: 38% !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .dialog_box_overview .dialog_box_content {
+    width: 70vw;
+  }
+
+  .dialog_box_overview .dialog_box_content .dialog_box_actions button,
+  .dialog_box_overview .dialog_box_content .dialog_box_actions a {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .dialog_box_overview {
+    place-content: flex-end;
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+
+  .dialog_box_overview .dialog_box_content {
+    width: 98%;
+  }
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

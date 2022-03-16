@@ -1,0 +1,34 @@
+.content_msg_sucess {
+  cursor: auto;
+  position: absolute;
+  left: 1.5rem;
+  bottom: 3rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #212529;
+  box-shadow: 1px 1px 4px #00000031;
+  animation: originBottom 0.6s;
+  border-left: 6px solid #10b981;
+}
+
+.content_msg_sucess div {
+  align-items: center;
+}
+
+.icon_check {
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes originBottom {
+  0% {
+    opacity: 0;
+    bottom: 0rem;
+    transition: linear 0.6s;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

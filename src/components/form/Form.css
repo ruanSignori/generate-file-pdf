@@ -1,0 +1,139 @@
+.add-user {
+    padding: 10px;
+}
+
+form {
+  max-width: 1100px;
+  min-height: 400px;
+  background-color: var(--bs-gray-800);
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 35px 50px;
+}
+
+input, textarea {
+  border: 2px solid #ced4da !important;
+  transition: all ease 0.2s;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid #6a9ce7 !important;
+  box-shadow: 2px 2px 4px #0000000f !important
+}
+
+/* Retirar setas do input number */
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 2px;
+}
+
+label {
+  color: var(--bs-gray-100);
+  display: block;
+}
+
+.input-group-flex {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.input-group-flex div:first-child {
+  width: 80%!important;
+}
+
+#button-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#button-field button {
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+
+.input-total label::after {
+  content: "R$";
+  position: relative;
+  top: 40px;
+  left: -25px;
+  color: var(--bs-gray-dark);
+}
+
+.parent-input-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.create-new-field {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-form {
+  margin-top: 30px !important;
+  border: none !important;
+}
+
+.confirm-form:focus {
+  border: none !important;
+}
+
+.input-quantity {
+  max-width: 12% !important;
+}
+
+.input-total {
+  max-width: 25% !important;
+}
+
+.input-total input {
+  text-align: right;
+  padding-left: 37px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #f8f8f8;
+}
+
+.scaling {
+  animation: scaling 0.3s;
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
